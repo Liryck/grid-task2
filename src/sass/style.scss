@@ -1,0 +1,18 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'base/variables';
+@import 'base/mixins';
+
+* {
+    font-family: sans-serif;
+}
+
+.conteiner {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+@import 'blocks/block-one';
+@import 'blocks/block-three';
+@import 'blocks/block-three-items';
+@import 'blocks/block-four';
+@import 'base/media';

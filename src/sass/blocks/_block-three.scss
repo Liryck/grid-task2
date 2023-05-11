@@ -1,0 +1,20 @@
+.block-three {
+    margin-bottom: 48px;
+    &__wrapper {
+        display: grid;
+        grid-template: repeat(2, minmax(146px, 0)) / repeat(3, 325px);
+        grid-auto-rows: minmax(146px, auto);
+        gap: 24px;
+    }
+    &__item {
+        @include block;
+    }
+    [data-block="11"] {
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    [data-block="14"] {
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+}

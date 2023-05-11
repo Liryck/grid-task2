@@ -1,0 +1,15 @@
+.block-three-items {
+    margin-bottom: 48px;
+    &_mb52 {
+        margin-bottom: 52px;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template: minmax(200px, auto) / repeat(3, 325px);
+        grid-auto-rows: minmax(200px, auto);
+        gap: 24px;
+    }
+    &__item {
+        @include block;
+    }
+}

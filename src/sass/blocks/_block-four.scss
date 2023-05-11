@@ -1,0 +1,25 @@
+.block-four {
+    margin-bottom: 48px;
+    &__wrapper {
+        display: grid;
+        grid-template: minmax(40px, auto) repeat(2, minmax(146px, auto)) / repeat(3, 325px);
+        grid-auto-rows: minmax(146px, auto);
+        gap: 24px;
+    }
+    &__item {
+        @include block;
+    }
+    [data-block="18"] {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    [data-block="21"] {
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+}

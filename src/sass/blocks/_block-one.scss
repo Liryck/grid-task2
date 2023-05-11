@@ -1,0 +1,30 @@
+.block-one {
+    margin-bottom: 48px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 675px 325px;
+        gap: 24px
+    }
+    &__core {
+        display: grid;
+        grid-template: minmax(300px, auto) repeat(2, minmax(200px, auto)) / repeat(2, 325px);
+        grid-auto-rows: minmax(200px, auto);
+        gap: 24px;
+    }
+    &__right {
+        display: grid;
+        grid-template: repeat(2, minmax(362px ,auto)) / 325px;
+        grid-auto-rows: minmax(362px ,auto);
+        gap: 24px
+    }
+    &__item {
+        @include block;
+    }
+
+    [data-block="1"] {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
